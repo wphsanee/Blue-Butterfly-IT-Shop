@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-customer [
+    <!ELEMENT it-customer (customers)>
+    <!ELEMENT customers (ID, name, lastname, gender, age, category)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT gender (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+
+    <!ENTITY personal "บุคคลทั่วไป">
+    <!ENTITY corp "บริษัท">
+    <!ENTITY vip "VIP">
+]>
+
+<it-customer>
+    <customers>
+        <ID>2001</ID>
+        <name>นีร</name>
+        <lastname>พงษ์ดี</lastname>
+        <gender>หญิง</gender>
+        <age>25 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>2002</ID>
+        <name>แพรวา</name>
+        <lastname>กุลจันทร์</lastname>
+        <gender>หญิง</gender>
+        <age>30 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>2003</ID>
+        <name>ตฤณ</name>
+        <lastname>ภูวดล</lastname>
+        <gender>ชาย</gender>
+        <age>28 ปี</age>
+        <category>&vip;</category>
+    </customers>
+    <customers>
+        <ID>2004</ID>
+        <name>ขวัญ</name>
+        <lastname>ศักดิ์ศรี</lastname>
+        <gender>หญิง</gender>
+        <age>22 ปี</age>
+        <category>&personal;</category>
+    </customers>
+    <customers>
+        <ID>2005</ID>
+        <name>เอก</name>
+        <lastname>ภักดี</lastname>
+        <gender>ชาย</gender>
+        <age>35 ปี</age>
+        <category>&corp;</category>
+    </customers>
+</it-customer>

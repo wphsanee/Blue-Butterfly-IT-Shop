@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-product [
+    <!ELEMENT it-product (products)>
+    <!ELEMENT products (ID, product, detail, price, amount, category)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT product (#PCDATA)>
+    <!ELEMENT detail (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+
+    <!ENTITY storage "อุปกรณ์เก็บข้อมูล">
+    <!ENTITY peripheral "อุปกรณ์ต่อพ่วงคอมพิวเตอร์">
+    <!ENTITY network "อุปกรณ์เครือข่าย">
+]>
+
+<it-product>
+    <products>
+        <ID>1001</ID>
+        <product>Kingston SSD 240GB</product>
+        <detail>Solid State Drive ความเร็วสูง ขนาด 2.5 นิ้ว</detail>
+        <price>950 บาท</price>
+        <amount>200 ชิ้น</amount>
+        <category>&storage;</category>
+    </products>
+    <products>
+        <ID>1002</ID>
+        <product>SanDisk Flash Drive 64GB</product>
+        <detail>แฟลชไดรฟ์ USB 3.1 ความเร็วสูง</detail>
+        <price>320 บาท</price>
+        <amount>400 ชิ้น</amount>
+        <category>&storage;</category>
+    </products>
+    <products>
+        <ID>1003</ID>
+        <product>Logitech Wireless Mouse M331</product>
+        <detail>เมาส์ไร้สาย เสียงคลิกเงียบ ประหยัดพลังงาน</detail>
+        <price>450 บาท</price>
+        <amount>250 ชิ้น</amount>
+        <category>&peripheral;</category>
+    </products>
+    <products>
+        <ID>1004</ID>
+        <product>Microsoft Wired Keyboard 600</product>
+        <detail>คีย์บอร์ดมีสาย USB พร้อมปุ่มลัดมัลติมีเดีย</detail>
+        <price>390 บาท</price>
+        <amount>300 ชิ้น</amount>
+        <category>&peripheral;</category>
+    </products>
+    <products>
+        <ID>1005</ID>
+        <product>TOTOLINK Wi-Fi USB Adapter</product>
+        <detail>ตัวรับ Wi-Fi USB ขนาดเล็ก รองรับ 300Mbps</detail>
+        <price>290 บาท</price>
+        <amount>350 ชิ้น</amount>
+        <category>&network;</category>
+    </products>
+</it-product>
